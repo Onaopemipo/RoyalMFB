@@ -1,0 +1,7 @@
+{
+  "name": "RoyalMFB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
