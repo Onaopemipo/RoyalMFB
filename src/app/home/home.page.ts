@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  title = 'Do More';
+  subtitle = 'Access world class banking experience and financial services with ease FOR FREE';
+  buttonText = 'Next';
+  source = 'assets/images/welcome.jpg';
+
   constructor() {}
 
 }

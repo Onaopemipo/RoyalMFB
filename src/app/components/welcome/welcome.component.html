@@ -1,0 +1,22 @@
+<ion-content class="content">
+  <div>
+    <ion-thumbnail slot="start">
+      <ion-img [src]="source"></ion-img>
+    </ion-thumbnail>
+  </div>
+<div>
+  <h2 class="title">{{caption}}</h2>
+</div>
+
+<div class="sub">
+  <p>
+  {{subtitle}}
+  </p>
+</div>
+
+<div>
+  <ion-button class="btn" expand="full" [href]="buttonAction">
+    {{buttonText}}
+  </ion-button>
+</div>
+</ion-content>
