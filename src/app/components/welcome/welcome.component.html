@@ -1,22 +1,27 @@
 <ion-content class="content">
-  <div>
-    <ion-thumbnail slot="start">
-      <ion-img [src]="source"></ion-img>
-    </ion-thumbnail>
-  </div>
-<div>
+  <section class="row">
+    <!-- <ion-thumbnail>
+      <ion-img [src]="source" class="img"></ion-img>
+    </ion-thumbnail> -->
+  </section>
+<section class="central-image">
+  <ion-img [src]="source" class="img"></ion-img>
+</section>
+<section section style=" padding-top: 2rem;">
   <h2 class="title">{{caption}}</h2>
-</div>
+</section>
 
-<div class="sub">
-  <p>
+<section class="row">
+  <p class="sub">
   {{subtitle}}
   </p>
-</div>
+</section>
 
-<div>
-  <ion-button class="btn" expand="full" [href]="buttonAction">
+
+<section style="padding-bottom: 2rem; padding-top: 2rem;">
+  <ion-button class="btn" expand="block" [href]="buttonAction">
     {{buttonText}}
   </ion-button>
-</div>
+</section>
+
 </ion-content>

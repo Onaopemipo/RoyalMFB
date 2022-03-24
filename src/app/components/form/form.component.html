@@ -1,0 +1,42 @@
+<!-- <form [formGroup]="signinForm">
+
+  <label for="username">Email or Phone Number</label>
+  <input id="username" type="text" formControlName="username" placeholder="youremail@example.com">
+
+  <label for="password">Password</label>
+  <input id="password" type="text" formControlName="password">
+
+  <button type="submit" [disabled]="!signinForm.valid">Sign In</button>
+
+</form> -->
+
+<ion-content>
+  <form [formGroup]="signinForm">
+    <div class="form-group row" >
+      <label class="label">Email address</label>
+      <input type="email" class="form-control" style="background-color: #B6B6B6;" placeholder="Email" name="email" id="email" required>
+    </div>
+
+    <div class="form-group row">
+      <label class="label">Password</label>
+      <div style="display: flex;border: 0.800000011920929px solid #CED4DA;border-radius: 3px;background-color: #B6B6B6; ">
+        <input [type]="show ? 'text' : 'password'" placeholder="Password" id="password" name="password" required style="border: none;">
+        <ion-icon  (click)="viewpassword()" *ngIf="!show"  icon="eye-off-outline" style="font-size: 32px;color: #676767;cursor: pointer; background-color: #B6B6B6;"></ion-icon>
+        <ion-icon  (click)="viewpassword()" *ngIf="show"  icon="eye-outline" style="font-size: 32px;color: #676767;cursor: pointer; background-color: #B6B6B6;"></ion-icon>
+      </div>
+
+    </div>
+
+    <!-- <div class="form-group row">
+      <app-show-hide-password>
+        <input type="password" placeholder="Password" formControlName="password">
+    </app-show-hide-password>
+    </div> -->
+    <div class="form-group">
+      <ion-button class="btn" expand="block" style="margin-top: 1rem;" [href]="buttonAction">
+        Sign In
+      </ion-button>
+    </div>
+
+  </form>
+</ion-content>

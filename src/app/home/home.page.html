@@ -1,19 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Royal MFB
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content slot="fixed" style="padding:20px">
+<ion-content>
   <ion-header collapse="condense">
-    <ion-toolbar class="toolbar">
-      <ion-title size="large"></ion-title>
-      <a href="http://" target="_blank" rel="noopener noreferrer">Skip</a>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-welcome [caption]=title [subtitle]=subtitle [buttonText]=buttonText [source]=source></app-welcome>
+  </ion-header>
+  <div class="row toolbar">
+    <div class="col-8"></div>
+    <div class="col-4"><a href="http://" target="_blank" rel="noopener noreferrer" style="text-decoration: none; font-size: 16px; line-height: 18px;">Skip</a>
+    </div>
+  </div>
+  <app-form></app-form>
+  <!-- <app-signin [caption]=title [subtitle]=subtitle [customForm]="customForm" [buttonTextOne]=buttonTextOne [buttonTextTwo]=buttonTextTwo [source]=source></app-signin> -->
 
 </ion-content>

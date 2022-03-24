@@ -1,0 +1,68 @@
+.btn {
+  --background: #25214F;
+  --color: #fff;
+  text-transform: capitalize;
+  height: 3.5rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  --background-activated: #25214F;
+}
+
+.btn2 {
+  --background: #D9AC0B;
+  --color: #fff;
+  text-transform: capitalize;
+  height: 3.5rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  --background-activated: #D9AC0B;
+}
+
+ion-button {
+  --border-radius: 15px;
+
+}
+
+ion-content {
+  --padding-end: 20px;
+  --padding-start: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.img {
+height: 290px;
+width: 230px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.title {
+  color: #25214F;
+  font-weight: 800;
+}
+
+.central-image {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sub-title {
+  color: #676767;
+}
+
+img {
+  height: 291px;
+  width: 230px;
+}
+

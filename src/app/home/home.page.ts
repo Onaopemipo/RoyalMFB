@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  title = 'Do More';
-  subtitle = 'Access world class banking experience and financial services with ease FOR FREE';
-  buttonText = 'Next';
-  source = 'assets/images/welcome.jpg';
+  title = 'Become Royalty';
+  subtitle = 'Get a bank account in less than 5 minutes';
+  buttonTextOne = 'Create Account';
+  buttonTextTwo = 'Sign In';
+  source = 'assets/images/phone.jpg';
+  customForm = true;
 
   constructor() {}
 
